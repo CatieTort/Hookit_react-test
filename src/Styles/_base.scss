@@ -33,3 +33,40 @@ h1 {
 	font-weight: inherit;
 	margin: 0;
 }
+
+
+.app {
+
+	&__container {
+		margin: 30px auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__header {
+		margin-bottom: 40px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.content-box {
+	border: 0;
+	border-radius: $border-radius;
+	background: white;
+	width: 90%;
+	max-width: 385px;
+	margin: 0 30px;
+	padding: 26px 30px 42px;
+	box-shadow: $box-shadow;
+}
+
+.hidden {
+	display: none;
+}
