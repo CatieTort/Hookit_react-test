@@ -1,0 +1,49 @@
+
+/*HELPERS*/
+
+.block {
+	display: block;
+}
+
+.p1 {
+	color: $content-gray;
+	line-height: 24px;
+	padding: 0 10px;
+
+	&--white {
+		color: $white;
+	}
+}
+
+
+.text-link {
+	margin: 10px auto;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+
+	a {
+		color: $primary-green;
+	}
+}
+
+.view-header {
+	font-weight: 400;
+	font-size: 2.4rem;
+	color: $dark-gray;
+	line-height: 3.6rem;
+
+	&--white {
+		color: $white;
+	}
+}
+
+.no-link {
+	a {
+		cursor: none;
+	}
+}
+
+.bg-gray {
+	background: $highlight-gray !important;
+}
