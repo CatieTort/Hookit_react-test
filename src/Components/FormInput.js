@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FormInput = (props) => {
-  	const { formLabel, type, name, handleChange, validationError, handleClick, placeholder } = props;
+  	const { value, formLabel, type, name, handleChange, validationError, handleClick, placeholder } = props;
 
     return (
     	<label>
@@ -10,7 +10,7 @@ const FormInput = (props) => {
           className={`input__input-box ${validationError && validationError===true ? "hasError" : "noError"}`}
           name={name ? name : ""}
           type={type ? type : "text" }
-          value={props.value}
+          value={value}
           onChange={handleChange}
 					onClick={handleClick}
 					placeholder={placeholder}

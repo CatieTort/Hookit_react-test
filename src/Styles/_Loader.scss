@@ -93,6 +93,12 @@
 	}
 }
 
+.loader {
+	&__container {
+		padding: 30px;
+	}
+}
+
 @keyframes dot-roller {
   0% {
     transform: rotate(0deg);
