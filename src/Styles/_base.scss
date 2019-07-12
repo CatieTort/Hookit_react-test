@@ -51,8 +51,20 @@ h1 {
 
 	&__content {
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+
+		&--sec{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			&--2 {
+				margin-top: 40px;
+			}
+		}
 	}
 }
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import FormInput from './FormInput';
-import Button from './Button';
 
 const SimpleForm = (props) => {
 		return (
@@ -14,11 +13,12 @@ const SimpleForm = (props) => {
 					handleChange={props.handleChange}
 				/>
 				}
-				<Button
-					id={"submit"}
-					buttonLabel={props.showText ? "Clear Text" : "Submit"}
-					handleClick={(e) => props.handleClick(e)}
-				/>
+				<button
+					type="submit"
+					className="btn"
+					onClick={(e) => props.handleClick(e)}
+					onKeyPress={(e) => props.handleClick(e)}
+				>{props.showText ? "Clear Text" : "Submit"}</button>
 			</form>
 		)
 	}

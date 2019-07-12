@@ -1,0 +1,36 @@
+.dot-nav {
+		display: flex;
+		padding: 15px 10px;
+  	justify-content: center;
+		width: 300px;
+
+		.dot {
+			height: 10px;
+			width: 10px;
+			background: $content-gray;
+			margin: 7px 5px;
+			border-radius: 50%;
+			cursor: pointer;
+
+			&.active {
+				background: $primary-green;
+			}
+		}
+  }
+
+
+.dot{
+	&__container {
+		&.content-box {
+			margin-right: 0px;
+		}
+	}
+
+	&__display-value {
+		font-size: 20px;
+		font-weight: bold;
+		color: $primary-green;
+		padding-bottom: 10px;
+	}
+
+}
